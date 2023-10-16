@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <title>Admin-Dashboard</title>
+</head>
+<body>
+    <section class="sidebar">
+        <a href="#" class="logo">
+          <i class="fab fa-slack"></i>
+          <span class="text">DashBoard</span>
+        </a>
+  
+        <ul class="side-menu top">
+          <li class="active">
+            <a href="#" class="nav-link">
+              <i class="fas fa-border-all"></i>
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="text">Product</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fas fa-chart-simple"></i>
+              <span class="text">Coustomer</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fa fa-usd"></i>
+              <span class="text">income</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fas fa-star promoted-icon"></i>
+              <span class="text">Promote</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">
+              <i class="fa fa-comment"></i>
+              <span class="text">Help</span>
+            </a>
+          </li>
+        </ul>
+        <div class="user-profile nav-link">
+            <img src="profile.png" alt="User Image">
+            <div class="user-info">
+                <p>Pradip</p>
+            </div>
+            <button class="dropdown-button">▼</button>
+        </div>
+      </section>
+
+      <section class="content">
+        <nav>
+          <i class="fas fa-bars menu-btn"></i>
+          <a href="#" class="nav-link">Categories</a>
+          <form action="#">
+            <div class="form-input">
+              <input type="search" placeholder="search..." />
+              <button class="search-btn">
+                <i class="fas fa-search search-icon"></i>
+              </button>
+            </div>
+          </form>
+  
+          <input type="checkbox" hidden id="switch-mode" />
+          <label for="switch-mode" class="switch-mode"></label>
+  
+          <a href="#" class="notification">
+            <i class="fas fa-bell"></i>
+            <span class="num">28</span>
+          </a>
+  
+          <a href="#" class="profile">
+            <img src="profile.png" alt="" />
+          </a>
+        </nav>
+  
+        <main>
+          <div class="box-info">
+            <li>
+              <i class="fas fa-usd"></i>
+              <span class="text">
+                <h3>Earning</h3>
+                <h3>$198k</h3>
+                <p>+37.8%</p>
+              </span>
+            </li>
+            <li>
+                <i class="fas fa-arrow-up"></i>
+                <span class="text">
+                    <h3>Orders</h3>
+                  <h3>$1.5K</h3>
+                  <p>-2%</p>
+                </span>
+              </li>
+            <li>
+              <i class="fas fa-balance-scale"></i>
+              <span class="text">
+                <h3>Balance</h3>
+                <h3>$2.4k</h3>
+                <p>-2% month</p>
+              </span>
+            </li>
+            <li>
+              <i class="fas fa-chart-line"></i>
+              <span class="text">
+                <h3>Sales</h3>
+                <h3>$89k</h3>
+                <p>+11% weak</p>
+              </span>
+            </li>
+          </div>
+  
+          <div class="table-data">
+            <div class="order">
+              <div class="head">
+                <h3>Product Sell</h3>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-filter"></i>
+              </div>
+  
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                    <th>Total Sales</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="pic.jpg" alt="" />
+                      <p>Abstract 3D</p>
+                    </td>
+                    <td>32 in stock</td>
+                    <td><span class="status pending">$45.99</span></td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="pic2.jpg" alt="" />
+                      <p>Sarphens illustration</p>
+                    </td>
+                    <td>30 in stock</td>
+                    <td><span class="status pending">$46.99</span></td>
+                    <td>33</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+            <!-- ---------------------------------------------- -->
+            <div class="box-info2">
+            <div class="charts">
+              <div class="chart">
+                <h2>Overview</h2>
+                <canvas id="myChart"></canvas>
+              </div>
+              <div class="chart">
+                <h2>Coustomers</h2>
+                <h6>Coustomer that buy products</h6>
+                <canvas id="doughnut"></canvas>
+              </div>
+            </div>
+            </div>
+            <!-- added part---------------------------------- -->
+        </main>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+      <script src="new.js"></script>
+      <script src="new2.js"></script>
+</body>
+</html>
